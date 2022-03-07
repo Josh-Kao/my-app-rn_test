@@ -9,8 +9,8 @@ import {
   StyleSheet,
 } from 'react-native';
 import axios from 'axios';
-import { MaterialIcons } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
+// import { MaterialIcons } from '@expo/vector-icons';
+// import { AntDesign } from '@expo/vector-icons';
 
 export default function App() {
   const [users, setUsers] = useState([]);
@@ -43,9 +43,9 @@ export default function App() {
               style={{ justifyContent: 'center' }}
               onPress={() => delHandler(item.login.uuid)}
             >
-              {/* <Text style={{ color: 'red' }}>Del</Text> */}
-              {/* {<MaterialIcons name='delete' size={24} color='#333' />} */}
-              <AntDesign name='deleteuser' size={24} color='red' />
+              <Text style={{ color: 'red' }}>Del</Text>
+              {/* <MaterialIcons name='delete' size={18} color='#333' />
+              <AntDesign name='deleteuser' size={24} color='red' /> */}
             </TouchableOpacity>
           </View>
         )}
